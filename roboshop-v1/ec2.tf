@@ -4,7 +4,7 @@ resource "aws_instance" "frontend" {
   vpc_security_group_ids = ["sg-0eb0ffe1f55b4d12b"]
 
   tags = {
-    Name = "frontend"
+    Name = "frontend.dev"
   }
 }
 
@@ -14,7 +14,7 @@ resource "aws_instance" "mongo" {
   vpc_security_group_ids = ["sg-0eb0ffe1f55b4d12b"]
 
   tags = {
-    Name = "mongo"
+    Name = "mongo.dev"
   }
 }
 
@@ -24,6 +24,6 @@ resource "aws_instance" "catalogue" {
   vpc_security_group_ids = ["sg-0eb0ffe1f55b4d12b"]
 
   tags = {
-    Name = "catalogue"
+    Name = "catalogue.dev"
   }
 }
