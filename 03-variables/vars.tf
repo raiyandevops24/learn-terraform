@@ -11,7 +11,7 @@ variable "z" {
 }
 
 variable "l" {
-  default = [10, 200, Arham, false]
+  default = [10, 200, "Arham", false, "Helllo World"]
 }
 
 
