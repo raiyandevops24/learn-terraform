@@ -14,6 +14,12 @@ variable "l" {
   default = [10, 200, "Arham", false, "Helllo World"]
 }
 
+variable "m" {
+  default = {
+    course= "DevOps"
+    Trainer="John"
+  }
+}
 
 # output
 
@@ -27,4 +33,8 @@ output "x1" {
 
 output "l" {
   value = "Value of the 1st element - ${var.l[0]}"
+}
+
+output "m" {
+  value = "Course name - ${var.m[course]} and Trainer is - ${var.m[trainer]}"
 }
