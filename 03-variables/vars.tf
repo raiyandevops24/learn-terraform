@@ -17,7 +17,7 @@ variable "l" {
 variable "m" {
   default = {
     course= "DevOps"
-    Trainer="John"
+    trainer="John"
   }
 }
 
@@ -36,5 +36,5 @@ output "l" {
 }
 
 output "m" {
-  value = "Course name - ${var.m["course"]} and Trainer is - ${var.m["rainer"]}"
+  value = "Course name - ${var.m["course"]} and Trainer is - ${var.m["trainer"]}"
 }
