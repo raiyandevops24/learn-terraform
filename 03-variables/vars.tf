@@ -2,6 +2,13 @@ variable "x" {
   default = 10
 }
 
+variable "y" {
+  default = "Hello World"
+}
+
+variable "z" {
+  default = true
+}
 
 
 
@@ -10,4 +17,8 @@ variable "x" {
 
 output "x" {
   value = var.x
+}
+
+output "x1" {
+  value = "Value of x - ${var.x}"
 }
