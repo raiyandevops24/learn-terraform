@@ -22,7 +22,7 @@ variable "m" {
 }
 
 variable "c" {
-
+type = number
 }
 
 # output
