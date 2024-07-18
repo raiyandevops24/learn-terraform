@@ -11,7 +11,7 @@ variable "z" {
 }
 
 variable "l" {
-  default = [10,200, Arham, false, Hello World]
+  default = [10, 200, Arham, false]
 }
 
 
