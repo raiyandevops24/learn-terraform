@@ -21,6 +21,10 @@ variable "m" {
   }
 }
 
+variable "c" {
+
+}
+
 # output
 
 output "x" {
