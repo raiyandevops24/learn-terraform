@@ -5,3 +5,7 @@ variable "instance_type" {
 variable "domain_name" {
   default = "raiyan-m.online"
 }
+
+variable "components" {
+  default = ["frontend", "mongo", "catalogue"]
+}
