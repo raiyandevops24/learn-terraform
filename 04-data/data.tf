@@ -18,5 +18,5 @@ data "aws_security_groups" "sg" {
 }
 
 output "sg" {
-  value = data.aws_security_groups.sg
+  value = data.aws_security_groups.sg.ids
 }
