@@ -8,3 +8,15 @@ data "aws_ami" "example" {
 output "ami" {
   value = data.aws_ami.example
 }
+
+data "aws_security_groups" "sg" {
+  filter {
+    name   = "group-name"
+    values = ["allow-all"]
+  }
+
+}
+
+output "sg" {
+  value = data.aws_security_groups.sg.id
+}
