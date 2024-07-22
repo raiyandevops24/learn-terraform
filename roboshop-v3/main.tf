@@ -9,7 +9,7 @@ resource "aws_instance" "instance" {
   }
 }
 
-resource "aws_route53_record" "frontend" {
+resource "aws_route53_record" "dns_record" {
   count = length(var.components)
   zone_id = data.aws_route53_zone.zone.zone_id
   name    = "${var.components[count.index]}.dev.${var.domain_name}"
