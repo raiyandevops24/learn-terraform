@@ -5,8 +5,8 @@ variable "domain_name" {
 
 variable "components" {
   default = {
-    frontend = {
-      instance_type = "t3.micro"
+    frontend = {                # each.key
+      instance_type = "t3.micro"  # each.value
     }
     mongo = {
       instance_type = "t3.micro"

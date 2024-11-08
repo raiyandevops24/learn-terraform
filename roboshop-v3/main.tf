@@ -1,4 +1,4 @@
-resource "aws_instance" "instance" {
+ resource "aws_instance" "instance" {
   count = length(var.components)
   ami           = data.aws_ami.ami.image_id
   instance_type = var.instance_type
